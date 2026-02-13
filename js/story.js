@@ -28,3 +28,19 @@ localStorage.setItem("musicTime", music.currentTime);
 function goBack(){
 window.location.href="story.html";
 }
+
+
+window.addEventListener("load", () => {
+
+let time = localStorage.getItem("musicTime");
+
+if(time){
+music.currentTime = time;
+}
+
+music.play().catch(()=>{});
+});
+
+window.addEventListener("beforeunload", () => {
+localStorage.setItem("musicTime", music.currentTime);
+});
