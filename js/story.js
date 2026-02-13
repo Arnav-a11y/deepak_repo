@@ -26,5 +26,5 @@ localStorage.setItem("musicTime", music.currentTime);
 });
 
 function goBack(){
-window.location.href="index.html";
+window.location.href="story.html";
 }
