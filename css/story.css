@@ -1,0 +1,85 @@
+body,html{
+margin:0;
+font-family:Poppins;
+color:white;
+}
+
+/* Background Video */
+.bg-video{
+position:fixed;
+min-width:100%;
+min-height:100%;
+object-fit:cover;
+z-index:-2;
+}
+
+/* Overlay */
+.overlay{
+position:fixed;
+width:100%;
+height:100%;
+background:linear-gradient(135deg,#ff006aa8,#000000cc);
+z-index:-1;
+}
+
+.story-container{
+padding-top:90px;
+padding-bottom:80px;
+}
+
+/* Title */
+.title{
+font-size:48px;
+font-weight:700;
+margin-bottom:60px;
+text-shadow:0 0 20px pink;
+}
+
+/* Timeline Card */
+.timeline-item{
+margin-bottom:80px;
+background: rgba(255,255,255,0.12);
+padding:35px;
+border-radius:25px;
+backdrop-filter: blur(20px);
+box-shadow:0 0 40px rgba(255,0,120,0.3);
+}
+
+/* TEXT STYLE */
+.text-content h2{
+font-size:32px;
+font-weight:700;
+margin-bottom:15px;
+}
+
+.text-content p{
+font-size:20px;
+line-height:1.6;
+opacity:0.9;
+}
+
+/* IMAGE FIX FACE CUT */
+.story-img{
+width:100%;
+height:320px;
+object-fit:contain;   /* FACE CUT FIX */
+background:black;
+border-radius:20px;
+border:4px solid white;
+box-shadow:0 0 25px pink;
+}
+
+/* Back Button */
+.backBtn{
+background:linear-gradient(45deg,#ff006a,#ff8c00);
+color:white;
+border-radius:30px;
+padding:12px 30px;
+font-weight:600;
+transition:0.4s;
+}
+
+.backBtn:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px pink;
+}
